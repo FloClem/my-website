@@ -375,6 +375,7 @@ section.recent-work .projects {
     display: grid;
     grid-template-columns: 1fr 1fr;
     flex-wrap: 3rem;
+    gap: 2rem;
 }
 
 section.recent-work .projects .project {
