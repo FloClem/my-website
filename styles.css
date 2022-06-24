@@ -19,7 +19,6 @@
     box-sizing: border-box;
     list-style: none;
     text-decoration: none;
-    color: #525252;
 }
 
 html {
@@ -66,6 +65,7 @@ p {
 
 section {
     padding: 10rem 0 7rem;
+    /* height: 100vh; */
     max-width: 100vw;
     overflow-x: hidden;
 }
@@ -278,4 +278,122 @@ section.landing .profile-area .inner-circle {
 
 /* About section styles */
 
+section.about {
+    background: var(--color-light);
+}
+
+section.about .container {
+    display: grid;
+    grid-template-columns: 26rem auto;
+    gap: 5rem;
+}
+
+section.about p {
+    margin-bottom: 1rem;
+}
+
+section.about .container .read-more-content {
+    display: none;
+}
+
+section.about .container .read-more {
+    display: block;
+    margin: 1rem 0 2rem;
+    color: var(--color-primary);
+    cursor: pointer;
+}
+
+section.about .container .read-more:hover {
+    text-decoration: underline;
+}
+
+/* SKILLS PAGE  */
+
+section.skills .cards {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+
+}
+
+section.skills .card {
+    width: 33.3333%;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 2rem;
+    margin-left: 2rem;
+    
+}
+
+section.skills .card:hover {
+    background: var(--color-light);
+}
+
+section.skills .card h3 {
+    margin-bottom: 1rem;
+    padding: 2rem;
+}
+
+section.skills .item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    
+}
+
+section.skills .item p {
+    color: var(--color-primary);
+    padding-right: 1rem;
+}
+
+.skill-comp {
+    color: var(--color-primary);
+    font-weight: lighter;
+}
+
+/* ====================================SKILLS PAGE ================================= */
+
+section.recent-work h4 {
+    text-align: center;
+    margin: 3rem 0 3rem;
+}
+
+section.recent-work h1 {
+    margin-bottom: 0;
+}
+
+.decorated {
+    background: var(--color-primary);
+    color: var(--color-white);
+    padding: 0.7rem;
+    font-weight: lighter;
+}
+
+
+section.recent-work .projects {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    flex-wrap: 3rem;
+}
+
+section.recent-work .projects .project {
+    display: flex;
+    flex-direction: column;
+    gap: 1.4rem;
+
+}
+
+section.recent-work .projects .project .action {
+    display: flex;
+    gap: 2rem;
+}
+
+section.recent-work .projects .project .action a {
+    color: var(--color-primary);
+}
+
+section.recent-work .projects .project .action a:hover {
+    text-decoration: underline;
+}
 
